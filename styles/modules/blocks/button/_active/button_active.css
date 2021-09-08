@@ -1,0 +1,9 @@
+.button_active {
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .button_active {
+    display: flex;
+    margin: 0
+  }
+}

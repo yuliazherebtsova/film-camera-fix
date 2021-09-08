@@ -1,0 +1,39 @@
+.button {
+  width: 120px;
+  height: 32px;
+  margin: 32px 30px 28px;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 14px;
+  font-style: normal;
+  font-family: 'FormularLight', 'Arial', sans-serif;
+  border: none;
+  border-right: 1px solid #232323;
+  border-bottom: 1px solid #232323;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0;
+  padding-left: 10px;
+  background-color: transparent;
+  background: linear-gradient(to left, transparent 50%, #242424 50%) right;
+  background-size: 200%;
+  transition: 0.8s;
+}
+
+.button:hover,
+.button:hover .main-info__arrow-left {
+  background-position: left;
+  color: #ecebe8;
+  fill: #ecebe8;
+}
+
+@media screen and (max-width: 900px){
+  .button{
+    display: none;
+  }
+}
+
+

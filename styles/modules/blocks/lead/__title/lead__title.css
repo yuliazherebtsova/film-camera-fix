@@ -1,0 +1,19 @@
+.lead__title {
+  margin: 0 0 32px 0;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+@media (max-width: 767px) {
+  .lead__title {
+    font-size: 52px;
+    line-height: 1.1;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 424px) {
+  .lead__title {
+    font-size: 40px;
+  }
+}

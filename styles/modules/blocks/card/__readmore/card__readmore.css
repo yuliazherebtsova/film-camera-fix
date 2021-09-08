@@ -1,0 +1,31 @@
+.card__readmore {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  width: 200px;
+  height: 32px;
+  font-family: 'FormularLight', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: .76;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-left: 1px solid #242424;
+  border-bottom: 1px solid #242424;
+  background: linear-gradient(to left, transparent 50%, #242424 50%) right;
+  background-size: 200%;
+  transition: background-position .8s ease, box-shadow 0s ease-out;
+}
+
+.card__readmore:focus, .card__readmore:active {
+  box-shadow: 0 0 0 4px #242424;
+  background: #242424;
+}
+
+.card__readmore:hover, .card__readmore:hover .card__readmore-arrow {
+  background-position: left;
+  color: #ECEBE8;
+  fill: #ECEBE8;
+}

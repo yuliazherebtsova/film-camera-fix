@@ -1,0 +1,10 @@
+.page__section_place_footer {
+  padding: 48px 92px 54px 0;
+}
+
+@media (max-width: 900px) {
+  .page__section_place_footer {
+    max-width: 320px;
+    padding: 48px 20px;
+  }
+}

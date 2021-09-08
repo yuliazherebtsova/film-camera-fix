@@ -1,0 +1,12 @@
+.content__section_place_reviews {
+  margin: 0 auto;
+  max-width: 1440px;
+  box-sizing: border-box;
+  padding-top: 150px;
+}
+
+@media screen and (max-width: 1024px) {
+  .content__section_place_reviews {
+    padding-top: 105px;
+  }
+}

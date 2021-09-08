@@ -1,0 +1,7 @@
+@mixin corner-icon($name, $width, $height) {
+  .icon-#{$name} {
+    background-image: url("/images/#{$name}.jpg");
+    width: $width;
+    height: $height;
+  }
+}

@@ -1,0 +1,8 @@
+.page {
+  margin: 0 auto;
+  min-width: 320px;
+  background-color: #ECEBE8;
+  color: #242424;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}

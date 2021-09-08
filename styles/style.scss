@@ -1,0 +1,70 @@
+@use "sass:map";
+// sass "словарь"
+@import "./modules/variables.scss";
+@import "./modules/mixins.scss";
+@import "./modules/functions.scss";
+@import "./modules/blocks/header/header.scss";
+// сначала переменные , потом блоки, потом элементы, потом модификаторы
+
+.main {
+  color: $primaryColor;
+  background-color: $backgroundColor;
+  font-family: $fontFamily;
+}
+
+.sidebar {
+  float: left;
+  margin-left: pow(4, 3) * 1px;
+}
+
+@include corner-icon("header", 100px, 100px);
+// Миксины
+
+$sizes: 40px, 50px, 80px;
+// массив const sizes = ['40px', '50px', '80px']
+
+@each $size in $sizes {
+  // цикл foreach
+  .icon-#{$size} {
+    font-size: $size;
+    height: $size;
+    width: $size;
+  }
+}
+
+$font-weights: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700,
+);
+// объект
+
+.footer {
+  font-weight: map.get($font-weights, "medium");
+
+  // Вложенность
+  &:after {
+    content: "";
+  }
+
+  &:hover {
+    color: pink;
+  }
+
+  > header:hover {
+    // > - прямой потомок
+    color: blue;
+  }
+}
+
+// Медиазапросы
+
+@mixin media($desktop) {
+  @media (max-width: $desktop) {
+    .footer {
+      background: aquamarine;
+    }
+  }
+}
+
+@include media($desktop);

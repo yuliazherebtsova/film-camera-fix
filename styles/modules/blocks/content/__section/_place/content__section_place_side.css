@@ -1,0 +1,10 @@
+.content__section_type_side{
+  margin: 0;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 905px){
+  .content__section_type_side{
+    margin: 0 auto;
+  }
+}
