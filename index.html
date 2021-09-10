@@ -7,13 +7,25 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="author" content="Yulia Zherebtsova">
-  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="stylesheet" href="./styles/style.css">
   <link rel="icon" href="./images/favicon.svg">
   <title>Ремонт плёночных фотоаппаратов</title>
 </head>
 
 <body class="page">
-  <header class="header page__section_place_header">
+  <header class="header page__section page__section_place_header">
+    <div class="company">
+      <p class="company__name">C-Works</p>
+      <div class="company__badge">Мы открылись</div>
+    </div>
+    <h1 class="header__title">Ремонт</h1>
+    <p class="header__subtitle">Плёночных фотоаппаратов</p>
+    <form class="form" id="formApply" name="formApply">
+      <input type="text" class="form__field" id="email" name="email">
+      <button class="form__submit-button" type="submit">Отремонтируйте камеру &#9996; &#9889; &#128072;
+        &#129309;</button>
+        <p class="form__field-placeholder">Напишите нам и мы свяжемся с вами.</p>
+    </form>
   </header>
   <main class="content">
     <section class="lead content__section_place_lead" aria-label="Блок с информацией о сервисе">
@@ -26,17 +38,7 @@
     </section>
   </main>
   <footer class="footer page__section_place_footer">
-    <div class="footer__columns">
-      <nav class="footer__column footer__column_content_info">
-        <h3 class="footer__column-heading">Меню</h3>
-        <ul class="list">
-          <li class="footer__column-links"><a href=# class="link footer__column-link">Главная</a></li>
-        </ul>
-      </nav>
-      <div class="footer__column footer__column_content_copyright">
-        <p class="footer__author">&copy; 2021, Yulia Zherebtsova</p>
-      </div>
-    </div>
+    <p class="footer__copyright">&copy; 2021, Yulia Zherebtsova</p>
   </footer>
 </body>
 

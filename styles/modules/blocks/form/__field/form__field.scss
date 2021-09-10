@@ -1,0 +1,29 @@
+.form__field {
+  margin: 0;
+  padding: 13px 16px;
+  box-sizing: border-box;
+  min-width: 348px;
+  font-family: $fontFamily;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.375px;
+  border: 0;
+  background: $inputBackgroundColor;
+  color: $primaryColor;
+  border-radius: 8px 0px 0px 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+  &:hover {
+    cursor: pointer;
+    background: $inputBackgroundColorHovered;
+    transition: background-color 0.2s linear;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

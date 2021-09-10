@@ -1,11 +1,160 @@
-.header {
+@import "/vendor/normalize.css";
+@import "/vendor/fonts/fonts.css";
+.page {
+  margin: 0 auto;
+  min-width: 320px;
+  background-color: #000;
   color: #fff;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page__section {
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.page__section_place_header {
+  padding: 60px 0 120px 0;
+  max-width: 1120px;
+}
+
+.header__title {
+  margin: 52px 0 12px;
+  padding: 0;
+  color: #fff;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 112px;
+}
+
+.header__subtitle {
+  padding: 0;
+  margin: 0 0 230px;
+  color: #fff;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 0.87;
+}
+
+.company {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.company__name {
+  margin: 0 20px 0 6px;
+  padding: 0;
+  color: #fff;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 1.36;
+}
+
+.company__badge {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 20px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  text-transform: lowercase;
+  background: #25e197;
+  color: #000;
+  font-family: #fff;
+  border-radius: 4px;
+}
+
+.form__field {
+  margin: 0;
+  padding: 13px 16px;
+  box-sizing: border-box;
+  min-width: 348px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.375px;
+  border: 0;
+  background: rgba(142, 142, 152, 0.2);
+  color: #fff;
+  border-radius: 8px 0px 0px 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.form__field:hover {
+  cursor: pointer;
+  background: rgba(142, 142, 152, 0.3);
+  transition: background-color 0.2s linear;
+}
+
+.form__field:focus {
+  outline: none;
+}
+
+.form__field-placeholder {
+  padding: 0;
+  margin: 12px 0 0 9px;
+  color: #8E8E98;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.form__submit-button {
+  margin: 0;
+  padding: 13px 16px;
+  min-width: 221px;
+  min-height: 50px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  letter-spacing: 0.375px;
+  background: #47474C;
+  color: #fff;
+  border: 0;
+  border-radius: 0px 8px 8px 0px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.footer__copyright {
+  margin: 0;
+  padding: 0;
+  color: #8E8E98;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.5;
 }
 
 .main {
   color: #fff;
-  background-color: #1f1f1f;
-  font-family: "Inter", "Arial", sans-serif;
+  background-color: #000;
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
 .sidebar {

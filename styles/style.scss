@@ -1,9 +1,40 @@
 @use "sass:map";
 // sass "словарь"
+
+@import "/vendor/normalize.css";
+@import "/vendor/fonts/fonts.css";
+// vendor
+
 @import "./modules/variables.scss";
 @import "./modules/mixins.scss";
 @import "./modules/functions.scss";
+// переменные, миксины, функции
+
+@import "./modules/blocks/page/page.scss";
+@import "./modules/blocks/page/__section/page__section.scss";
+@import "./modules/blocks/page/__section/_place/page__section_place_header.scss";
+// page
+
 @import "./modules/blocks/header/header.scss";
+@import "./modules/blocks/header/__title/header__title.scss";
+@import "./modules/blocks/header/__subtitle/header__subtitle.scss";
+// header
+
+@import "./modules/blocks/company/company.scss";
+@import "./modules/blocks/company/__name/company__name.scss";
+@import "./modules/blocks/company/__badge/company__badge.scss";
+// company
+
+@import "./modules/blocks/form/form.scss";
+@import "./modules/blocks/form/__field/form__field.scss";
+@import "./modules/blocks/form/__field-placeholder/form__field-placeholder.scss";
+@import "./modules/blocks/form/__submit-button/_submit-button";
+// form
+
+@import "./modules/blocks/footer/footer.scss";
+@import "./modules/blocks/footer/__copyright/footer__copyright.scss";
+// footer
+
 // сначала переменные , потом блоки, потом элементы, потом модификаторы
 
 .main {

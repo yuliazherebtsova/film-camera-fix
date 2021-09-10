@@ -1,0 +1,18 @@
+.company__badge {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 20px;
+  font-family: $fontFamily;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  text-transform: lowercase;
+  background: $badgeBackgroundColor;
+  color: $badgePrimaryColor;
+  font-family: $primaryColor;
+  border-radius: 4px;
+}
