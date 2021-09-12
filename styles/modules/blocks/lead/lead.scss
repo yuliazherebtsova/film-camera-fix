@@ -1,6 +1,9 @@
 .lead {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  max-height: 800px;
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  box-sizing: border-box;
   grid-auto-flow: dense;
+  gap: 20px;
 }
