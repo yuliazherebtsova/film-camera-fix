@@ -13,7 +13,13 @@
 @import "./modules/blocks/page/page.scss";
 @import "./modules/blocks/page/__section/page__section.scss";
 @import "./modules/blocks/page/__section/_place/page__section_place_header.scss";
+@import "./modules/blocks/page/__section/_place/page__section_place_footer.scss";
 // page
+
+@import "./modules/blocks/content/content.scss";
+@import "./modules/blocks/content/__section/content__section.scss";
+@import "./modules/blocks/content/__section/_place/content__section_place_lead.scss";
+// content
 
 @import "./modules/blocks/header/header.scss";
 @import "./modules/blocks/header/__title/header__title.scss";
@@ -26,10 +32,15 @@
 // company
 
 @import "./modules/blocks/form/form.scss";
+@import "./modules/blocks/form/_place/form_place_footer/form_place_footer.scss";
 @import "./modules/blocks/form/__field/form__field.scss";
 @import "./modules/blocks/form/__field-placeholder/form__field-placeholder.scss";
 @import "./modules/blocks/form/__submit-button/_submit-button";
 // form
+
+@import "./modules/blocks/lead/lead.scss";
+@import "./modules/blocks/lead/__illustration/lead__illustration.scss";
+// lead
 
 @import "./modules/blocks/footer/footer.scss";
 @import "./modules/blocks/footer/__copyright/footer__copyright.scss";
@@ -92,7 +103,7 @@ $font-weights: (
 
 @mixin media($desktop) {
   @media (max-width: $desktop) {
-    .footer {
+    .footer__old {
       background: aquamarine;
     }
   }
