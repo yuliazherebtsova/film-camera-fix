@@ -1,0 +1,10 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  min-width: 280px;
+  min-height: 282px;
+  background: $cardBackgroundColor;
+  border-radius: 16px;
+  box-sizing: border-box;
+}

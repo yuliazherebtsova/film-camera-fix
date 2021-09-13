@@ -45,6 +45,17 @@
   max-width: 1380px;
 }
 
+.section-title {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 1.25;
+}
+
 .header__title {
   margin: 52px 0 12px;
   padding: 0;
@@ -144,7 +155,7 @@
 .form__field-placeholder {
   padding: 0;
   margin: 12px 0 0 9px;
-  color: #8E8E98;
+  color: #8e8e98;
   font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -164,7 +175,7 @@
   line-height: 1.71;
   text-align: center;
   letter-spacing: 0.375px;
-  background: #47474C;
+  background: #47474c;
   color: #fff;
   border: 0;
   border-radius: 0px 8px 8px 0px;
@@ -214,7 +225,152 @@
 
 .description {
   padding: 120px 0 60px 0;
-  color: #8E8E98;
+}
+
+.description__text {
+  margin: 0;
+  padding: 0;
+  color: #8e8e98;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 1.25;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  min-width: 280px;
+  min-height: 282px;
+  background: #1c1c1e;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+.card__tag {
+  padding: 0;
+  margin: 0 0 20px 0;
+  color: #8e8e98;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.card__title {
+  padding: 0;
+  margin: 0 0 40px 0;
+  color: #fff;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+}
+
+.card__text {
+  padding: 0;
+  margin: 0 0 40px 0;
+  color: #8e8e98;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 1.25;
+}
+
+.card__price {
+  padding: 0;
+  margin: 0;
+  color: #25e197;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.cards__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  list-style: none;
+}
+
+.services {
+  padding-bottom: 110px;
+}
+
+.services__title {
+  margin-bottom: 120px;
+}
+
+.guarantee {
+  padding-bottom: 110px;
+}
+
+.guarantee__title {
+  margin-bottom: 60px;
+}
+
+.guarantee__cards-list {
+  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+}
+
+.guarantee__card {
+  min-width: 265px;
+  min-height: 150px;
+  min-height: 150px;
+  padding: 20px;
+}
+
+.guarantee__card-title {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.guarantee__card-text {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.27;
+}
+
+.donate {
+  padding-bottom: 240px;
+}
+
+.donate__title {
+  margin-bottom: 90px;
+}
+
+.donate__button {
+  margin: 0 0 50px 0;
+  padding: 13px 30px;
+  min-width: 306px;
+  min-height: 50px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  letter-spacing: 0.375px;
+  background: #47474c;
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.donate__text {
+  margin: 0;
+  padding: 0;
+  color: #8e8e98;
   font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -235,7 +391,7 @@
   justify-self: end;
   margin: 0;
   padding: 0;
-  color: #8E8E98;
+  color: #8e8e98;
   font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;

@@ -21,6 +21,9 @@
 @import "./modules/blocks/content/__section/_place/content__section_place_gallery.scss";
 // content
 
+@import "./modules/blocks/section-title/section-title.scss";
+// section-title
+
 @import "./modules/blocks/header/header.scss";
 @import "./modules/blocks/header/__title/header__title.scss";
 @import "./modules/blocks/header/__subtitle/header__subtitle.scss";
@@ -38,7 +41,6 @@
 @import "./modules/blocks/form/__submit-button/_submit-button";
 // form
 
-@import "./modules/blocks/gallery/gallery.scss";
 @import "./modules/blocks/gallery/__upper-row/gallery__upper-row.scss";
 @import "./modules/blocks/gallery/__lower-row/gallery__lower-row.scss";
 @import "./modules/blocks/gallery/__item/gallery__item.scss";
@@ -46,7 +48,36 @@
 // gallery
 
 @import "./modules/blocks/description/description.scss";
+@import "./modules/blocks/description/__text/description__text.scss";
 // description
+
+@import "./modules/blocks/card/card.scss";
+@import "./modules/blocks/card/__tag/card__tag.scss";
+@import "./modules/blocks/card/__title/card__title.scss";
+@import "./modules/blocks/card/__text/card__text.scss";
+@import "./modules/blocks/card/__price/card__price.scss";
+// card
+
+@import "./modules/blocks/cards/__list/cards__list.scss";
+// cards
+
+@import "./modules/blocks/services/services.scss";
+@import "./modules/blocks/services/__title/services__title.scss";
+// services
+
+@import "./modules/blocks/guarantee/guarantee.scss";
+@import "./modules/blocks/guarantee/__title/guarantee__title.scss";
+@import "./modules/blocks/guarantee/__cards-list/guarantee__cards-list.scss";
+@import "./modules/blocks/guarantee/__card/guarantee__card.scss";
+@import "./modules/blocks/guarantee/__card-title/guarantee__card-title.scss";
+@import "./modules/blocks/guarantee/__card-text/guarantee__card-text.scss";
+// guarantee
+
+@import "./modules/blocks/donate/donate.scss";
+@import "./modules/blocks/donate/__title/donate__title.scss";
+@import "./modules/blocks/donate/__button/donate__button.scss";
+@import "./modules/blocks/donate/__text/donate__text.scss";
+// donate
 
 @import "./modules/blocks/footer/footer.scss";
 @import "./modules/blocks/footer/__copyright/footer__copyright.scss";

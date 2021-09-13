@@ -1,0 +1,21 @@
+.donate__button {
+  margin: 0 0 50px 0;
+  padding: 13px 30px;
+  min-width: 306px;
+  min-height: 50px;
+  font-family: $fontFamily;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  letter-spacing: 0.375px;
+  background: $buttonBackgroundColor;
+  color: $primaryColor;
+  border: 0;
+  border-radius: 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+}
