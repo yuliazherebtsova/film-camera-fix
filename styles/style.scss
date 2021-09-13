@@ -1,3 +1,5 @@
+// сначала переменные , потом блоки, потом элементы, потом модификаторы
+
 @use "sass:map";
 // sass "словарь"
 
@@ -24,7 +26,6 @@
 @import "./modules/blocks/section-title/section-title.scss";
 // section-title
 
-@import "./modules/blocks/header/header.scss";
 @import "./modules/blocks/header/__title/header__title.scss";
 @import "./modules/blocks/header/__subtitle/header__subtitle.scss";
 // header
@@ -83,8 +84,6 @@
 @import "./modules/blocks/footer/__copyright/footer__copyright.scss";
 // footer
 
-// сначала переменные , потом блоки, потом элементы, потом модификаторы
-
 .main {
   color: $primaryColor;
   background-color: $backgroundColor;
@@ -95,9 +94,6 @@
   float: left;
   margin-left: pow(4, 3) * 1px;
 }
-
-@include corner-icon("header", 100px, 100px);
-// Миксины
 
 $sizes: 40px, 50px, 80px;
 // массив const sizes = ['40px', '50px', '80px']

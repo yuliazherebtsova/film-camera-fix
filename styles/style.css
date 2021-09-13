@@ -66,6 +66,11 @@
   font-size: 112px;
 }
 
+@media (max-width: 1024px) {
+  .header__title {
+    font-size: 50px;
+  }
+}
 .header__subtitle {
   padding: 0;
   margin: 0 0 230px;
@@ -110,7 +115,6 @@
   text-transform: lowercase;
   background: #25e197;
   color: #000;
-  font-family: #fff;
   border-radius: 4px;
 }
 
@@ -410,12 +414,6 @@
   margin-left: 64px;
 }
 
-.icon-header {
-  background-image: url("/images/header.jpg");
-  width: 100px;
-  height: 100px;
-}
-
 .icon-40px {
   font-size: 40px;
   height: 40px;
@@ -447,7 +445,7 @@
   color: blue;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1440px) {
   .footer__old {
     background: aquamarine;
   }
