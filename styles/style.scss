@@ -18,7 +18,7 @@
 
 @import "./modules/blocks/content/content.scss";
 @import "./modules/blocks/content/__section/content__section.scss";
-@import "./modules/blocks/content/__section/_place/content__section_place_lead.scss";
+@import "./modules/blocks/content/__section/_place/content__section_place_gallery.scss";
 // content
 
 @import "./modules/blocks/header/header.scss";
@@ -38,10 +38,10 @@
 @import "./modules/blocks/form/__submit-button/_submit-button";
 // form
 
-@import "./modules/blocks/lead/lead.scss";
-@import "./modules/blocks/lead/__item/lead__item.scss";
-@import "./modules/blocks/lead/__image/lead__image.scss";
-// lead
+@import "./modules/blocks/gallery/gallery.scss";
+@import "./modules/blocks/gallery/__item/gallery__item.scss";
+@import "./modules/blocks/gallery/__image/gallery__image.scss";
+// gallery
 
 @import "./modules/blocks/footer/footer.scss";
 @import "./modules/blocks/footer/__copyright/footer__copyright.scss";

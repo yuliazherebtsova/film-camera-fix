@@ -1,26 +1,26 @@
-.lead__item {
+.gallery__item {
   margin: 0;
   padding: 0;
   height: 100%;
   box-sizing: border-box;
 }
 
-.lead__item:nth-child(1) {
+.gallery__item:nth-child(1) {
   grid-column: span 5;
   grid-row: span 3;
 }
 
-.lead__item:nth-child(2) {
+.gallery__item:nth-child(2) {
   grid-column: 6 / span 10;
   grid-row: span 3;
 }
 
-.lead__item:nth-child(3) {
+.gallery__item:nth-child(3) {
   grid-column: span 7;
   grid-row: 4 / span 7;
 }
 
-.lead__item:nth-child(4) {
+.gallery__item:nth-child(4) {
   grid-column: 8 / span 8;
   grid-row: 4 / span 7;
 }
