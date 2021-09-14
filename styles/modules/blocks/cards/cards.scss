@@ -1,4 +1,4 @@
-.cards__list {
+.cards {
   margin: 0;
   padding: 0;
   display: grid;
@@ -7,6 +7,6 @@
   list-style: none;
 }
 
-@include breakpoint("cards__list", $mobile) {
+@include breakpoint("cards", $mobile) {
   grid-template-columns: repeat(auto-fit, minmax($cardWidthMobile, 1fr));
 }

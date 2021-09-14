@@ -1,13 +1,11 @@
 @charset "UTF-8";
 /*
 TODO Чек-лист [V]
-* 1. Адаптив 320px
+* 1. Изменение текста на кнопке после отправки формы
 *
-* 2. Кнопка формы для моб.
+* 2. Светлая тема (опционально)
 *
-* 3. Изменение текста на кнопке после отправки формы
-*
-* 4. Светлая тема (опционально)
+* 3. Валидаторы
 */
 @import "/vendor/normalize.css";
 @import "/vendor/fonts/fonts.css";
@@ -521,7 +519,7 @@ TODO Чек-лист [V]
     line-height: 1.5;
   }
 }
-.cards__list {
+.cards {
   margin: 0;
   padding: 0;
   display: grid;
@@ -531,7 +529,7 @@ TODO Чек-лист [V]
 }
 
 @media (max-width: 767px) {
-  .cards__list {
+  .cards {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
 }

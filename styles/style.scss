@@ -1,12 +1,10 @@
 /*
 TODO Чек-лист [V]
-* 1. Адаптив 320px
+* 1. Изменение текста на кнопке после отправки формы
 *
-* 2. Кнопка формы для моб.
+* 2. Светлая тема (опционально)
 *
-* 3. Изменение текста на кнопке после отправки формы
-*
-* 4. Светлая тема (опционально)
+* 3. Валидаторы
 */
 
 // сначала переменные , потом блоки, потом элементы, потом модификаторы
@@ -71,7 +69,7 @@ TODO Чек-лист [V]
 @import "./modules/blocks/card/__price/card__price.scss";
 // card
 
-@import "./modules/blocks/cards/__list/cards__list.scss";
+@import "./modules/blocks/cards/cards.scss";
 // cards
 
 @import "./modules/blocks/services/services.scss";
