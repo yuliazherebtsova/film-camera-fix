@@ -10,6 +10,15 @@ $className: 'header__title';
   font-size: 112px;
 }
 
-@include breakpoint(#{$className}, $tablet) {
+@include breakpoint(#{$className}, $desktop) {
+  margin-top: 70px;
+  margin-bottom: 0;
+  font-size: 70px;
+  line-height: 1.29;
+}
+
+@include breakpoint(#{$className}, $mobile) {
+  margin-top: 60px;
   font-size: 50px;
+  line-height: 1.2;
 }

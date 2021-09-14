@@ -8,3 +8,9 @@
   font-size: 32px;
   line-height: 1.25;
 }
+
+@include breakpoint("card__text", $mobile) {
+  margin-bottom: auto;
+  font-size: 12px;
+  line-height: 1.5;
+}

@@ -1,7 +1,8 @@
 .donate__button {
   margin: 0 0 50px 0;
   padding: 13px 30px;
-  min-width: 306px;
+  max-width: 306px;
+  width: 100%;
   min-height: 50px;
   font-family: $fontFamily;
   font-style: normal;
@@ -17,5 +18,16 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  cursor: pointer;
+
+  &:hover {
+    cursor: pointer;
+    background: $buttonBackgroundColorHovered;
+    transition: background-color 0.2s linear;
+  }
+}
+
+@include breakpoint('donate__button', $mobile) {
+  margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 1.5;
 }

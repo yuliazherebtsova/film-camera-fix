@@ -6,5 +6,18 @@
   font-style: normal;
   font-weight: normal;
   font-size: 80px;
-  line-height: .87;
+  line-height: 0.87;
+}
+
+@include breakpoint('header__subtitle', $desktop) {
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 470px;
+}
+
+@include breakpoint('header__subtitle', $mobile) {
+  margin-top: 10px;
+  margin-bottom: 260px;
+  font-size: 30px;
+  line-height: 1.27;
 }

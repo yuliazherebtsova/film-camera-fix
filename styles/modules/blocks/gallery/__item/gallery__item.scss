@@ -1,4 +1,6 @@
-.gallery__item {
+$className: '.gallery__item';
+
+#{$className} {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -13,4 +15,19 @@
     min-width: 445px;
     min-height: 344px;
   }
+}
+
+@include breakpoint("gallery__upper-row #{$className}:nth-child(1)", $mobile) {
+  margin-bottom: 10px;
+}
+
+@include breakpoint("gallery__lower-row #{$className}:nth-child(1)", $mobile) {
+  margin-bottom: 20px;
+  max-width: 100%;
+  height: 124px;
+}
+
+@include breakpoint("gallery__lower-row #{$className}:nth-child(2)", $mobile) {
+  min-width: 100%;
+  min-height: 211px;
 }

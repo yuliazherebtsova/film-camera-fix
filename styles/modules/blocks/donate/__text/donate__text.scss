@@ -8,3 +8,12 @@
   font-size: 32px;
   line-height: 1.25;
 }
+
+@include breakpoint('donate__text', $desktop) {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+@include breakpoint('donate__text', $mobile) {
+  font-size: 12px;
+}

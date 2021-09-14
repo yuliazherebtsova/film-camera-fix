@@ -3,3 +3,13 @@
   justify-items: start;
   row-gap: 90px;
 }
+
+@include breakpoint('footer', $desktop) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+@include breakpoint('footer', $mobile) {
+  row-gap: unset;
+}

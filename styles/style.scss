@@ -1,7 +1,18 @@
+/*
+TODO Чек-лист [V]
+* 1. Адаптив 320px
+*
+* 2. Кнопка формы для моб.
+*
+* 3. Изменение текста на кнопке после отправки формы
+*
+* 4. Светлая тема (опционально)
+*/
+
 // сначала переменные , потом блоки, потом элементы, потом модификаторы
 
-@use "sass:map";
-// sass "словарь"
+// @use "sass:map";
+// // sass "словарь"
 
 @import "/vendor/normalize.css";
 @import "/vendor/fonts/fonts.css";
@@ -9,7 +20,7 @@
 
 @import "./modules/variables.scss";
 @import "./modules/mixins.scss";
-@import "./modules/functions.scss";
+// @import "./modules/functions.scss";
 // переменные, миксины, функции
 
 @import "./modules/blocks/page/page.scss";
@@ -40,6 +51,7 @@
 @import "./modules/blocks/form/__field/form__field.scss";
 @import "./modules/blocks/form/__field-placeholder/form__field-placeholder.scss";
 @import "./modules/blocks/form/__submit-button/_submit-button";
+@import "./modules/blocks/form/__submit-button-mobile/form__submit-button-mobile.scss";
 // form
 
 @import "./modules/blocks/gallery/__upper-row/gallery__upper-row.scss";
@@ -81,65 +93,64 @@
 // donate
 
 @import "./modules/blocks/footer/footer.scss";
+@import "./modules/blocks/footer/__form/footer__form.scss";
 @import "./modules/blocks/footer/__copyright/footer__copyright.scss";
 // footer
 
-.main {
-  color: $primaryColor;
-  background-color: $backgroundColor;
-  font-family: $fontFamily;
-}
+// .main {
+//   color: $primaryColor;
+//   background-color: $backgroundColor;
+//   font-family: $fontFamily;
+// }
 
-.sidebar {
-  float: left;
-  margin-left: pow(4, 3) * 1px;
-}
+// .sidebar {
+//   float: left;
+//   margin-left: pow(4, 3) * 1px;
+// }
 
-$sizes: 40px, 50px, 80px;
-// массив const sizes = ['40px', '50px', '80px']
+// $sizes: 40px, 50px, 80px;
+// // массив const sizes = ['40px', '50px', '80px']
 
-@each $size in $sizes {
-  // цикл foreach
-  .icon-#{$size} {
-    font-size: $size;
-    height: $size;
-    width: $size;
-  }
-}
+// @each $size in $sizes {
+//   // цикл foreach
+//   .icon-#{$size} {
+//     font-size: $size;
+//     height: $size;
+//     width: $size;
+//   }
+// }
 
-$font-weights: (
-  "regular": 400,
-  "medium": 500,
-  "bold": 700,
-);
-// объект
+// $font-weights: (
+//   "regular": 400,
+//   "medium": 500,
+//   "bold": 700,
+// );
+// // объект
 
-.footer {
-  font-weight: map.get($font-weights, "medium");
+// .footer {
+//   font-weight: map.get($font-weights, "medium");
 
-  // Вложенность
-  &:after {
-    content: "";
-  }
+//   // Вложенность
+//   &:after {
+//     content: "";
+//   }
 
-  &:hover {
-    color: pink;
-  }
+//   &:hover {
+//     color: pink;
+//   }
 
-  > header:hover {
-    // > - прямой потомок
-    color: blue;
-  }
-}
+//   > header:hover {
+//     // > - прямой потомок
+//     color: blue;
+//   }
+// }
 
-// Медиазапросы
+// // Медиазапросы
 
-@mixin media($desktop) {
-  @media (max-width: $desktop) {
-    .footer__old {
-      background: aquamarine;
-    }
-  }
-}
-
-@include media($desktop);
+// @mixin media($desktop) {
+//   @media (max-width: $desktop) {
+//     .footer__old {
+//       background: aquamarine;
+//     }
+//   }
+// }

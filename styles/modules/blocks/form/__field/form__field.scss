@@ -28,3 +28,7 @@
     outline: none;
   }
 }
+
+@include breakpoint("form__field", $mobile) {
+  min-width: 100%;
+}

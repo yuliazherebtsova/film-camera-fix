@@ -7,3 +7,8 @@
   font-weight: normal;
   font-size: 14px;
 }
+
+@include breakpoint("card__price", $mobile) {
+  font-size: 12px;
+  line-height: 1.5;
+}

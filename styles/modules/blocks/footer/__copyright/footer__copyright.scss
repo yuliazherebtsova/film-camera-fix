@@ -12,3 +12,11 @@
   font-size: 12px;
   line-height: 1.5;
 }
+
+@include breakpoint('footer__copyright', $desktop) {
+  align-self: flex-start;
+}
+
+@include breakpoint('footer__copyright', $mobile) {
+  margin-top: 40px;
+}

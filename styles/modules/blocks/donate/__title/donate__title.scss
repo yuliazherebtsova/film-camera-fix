@@ -1,3 +1,7 @@
 .donate__title {
   margin-bottom: 90px;
 }
+
+@include breakpoint("donate__title", $mobile) {
+  margin-bottom: 50px;
+}

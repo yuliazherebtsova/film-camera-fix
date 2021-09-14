@@ -8,3 +8,12 @@
   font-size: 32px;
   line-height: 1.25;
 }
+
+@include breakpoint("section-title", $desktop) {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+@include breakpoint("section-title", $mobile) {
+  font-size: 12px;
+}

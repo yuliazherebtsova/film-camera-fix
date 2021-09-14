@@ -1,3 +1,7 @@
 .guarantee__title {
   margin-bottom: 60px;
 }
+
+@include breakpoint("guarantee__title", $mobile) {
+  margin-bottom: 40px;
+}

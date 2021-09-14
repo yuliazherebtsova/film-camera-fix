@@ -1,5 +1,16 @@
 .page__section {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0;
   box-sizing: border-box;
+}
+
+@include breakpoint('page__section', $desktop) {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+@include breakpoint('page__section', $mobile) {
+  padding-left: 20px;
+  padding-right: 20px;
 }
