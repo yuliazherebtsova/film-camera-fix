@@ -19,4 +19,5 @@
 
 @include breakpoint('footer__copyright', $mobile) {
   margin-top: 40px;
+  margin-left: 9px;
 }

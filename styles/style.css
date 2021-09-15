@@ -374,7 +374,7 @@
 
 @media (max-width: 767px) {
   .gallery__upper-row .gallery__item:nth-child(1) {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 767px) {
@@ -713,5 +713,6 @@
 @media (max-width: 767px) {
   .footer__copyright {
     margin-top: 40px;
+    margin-left: 9px;
   }
 }/*# sourceMappingURL=style.css.map */
