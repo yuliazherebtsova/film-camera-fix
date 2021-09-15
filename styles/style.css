@@ -1,12 +1,3 @@
-@charset "UTF-8";
-/*
-TODO Чек-лист [V]
-* 1. Изменение текста на кнопке после отправки формы
-*
-* 2. Светлая тема (опционально)
-*
-* 3. Валидаторы
-*/
 @import "/vendor/normalize.css";
 @import "/vendor/fonts/fonts.css";
 .page {
@@ -228,6 +219,11 @@ TODO Чек-лист [V]
   grid-row: 2;
 }
 
+@media (max-width: 767px) {
+  .form_place_footer {
+    margin-top: 170px;
+  }
+}
 .form__field {
   margin: 0;
   padding: 0 16px 0;
@@ -692,11 +688,6 @@ TODO Чек-лист [V]
 @media (max-width: 767px) {
   .footer {
     row-gap: unset;
-  }
-}
-@media (max-width: 767px) {
-  .footer__form {
-    margin-top: 170px;
   }
 }
 .footer__copyright {

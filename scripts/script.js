@@ -1,53 +1,65 @@
-const mobileMenu = document.querySelector(".header__mobile");
-const menuBtn = document.querySelector(".header__burger");
+const formApplyHeader = document.querySelector('#headerFormApply');
+const formApplyHeaderEmail = document.querySelector('#headerFormApply').elements['email'];
+const formApplyFooter = document.querySelector('#footerFormApply');
+const formApplyFooterEmail = document.querySelector('#footerFormApply').elements['email'];
+const cards = document.querySelectorAll('.card');
+const buttonsSubmit = document.querySelectorAll('.form__submit-button');
+const buttonsSubmitMobile = document.querySelectorAll('.form__submit-button-mobile');
+const buttonDonate = document.querySelector('.donate__button');
 
-menuBtn.addEventListener("click", () => {
-  mobileMenu.classList.toggle("header__mobile_active");
+formApplyHeader.addEventListener('submit', (evt) => {
+  // добавляем слушатель на отправку формы в header
+  evt.preventDefault();
+  // отменяет стандартную отправку формы, которая перезагружает страницу,
+  // теперь можем определить свою логику отправки
+  if (formApplyHeaderEmail.value) {
+    alert(`the apply form in HEADER has been submitted: ${formApplyHeaderEmail.value}!`);
+    const submitButton = evt.submitter.classList;
+    console.log(submitButton)
+    if (submitButton.contains('form__submit-button'))
+      evt.submitter.textContent = `Круто, спасибо за доверие!`;
+    else {
+      if (submitButton.contains('form__submit-button-mobile'))
+      // если находимся в моб. версии сайта, меняем эмоджи кнопки
+        evt.submitter.textContent = String.fromCodePoint(128155);
+    }
+  }
 });
 
-function createCardReviews(cardData) {
-  // функция создания нового слайда в блоке Feedback
-  const cardTemplate = document.querySelector('#slideReviews-template').content;
-  const cardElement = cardTemplate.querySelector('.reviews__slide').cloneNode(true);
-  // создаем слайд в блоке Reviews по шаблону
-  cardElement.querySelector('.card__image').src = cardData.image;
-  cardElement.querySelector('.card__text').textContent = cardData.text;
+formApplyFooter.addEventListener('submit', (evt) => {
+  // добавляем слушатель на отправку формы в footer
+  evt.preventDefault();
+  if (formApplyFooterEmail.value) {
+    alert(`the apply form in FOOTER has been submitted: ${formApplyFooterEmail.value}!`);
+    const submitButton = evt.submitter.classList;
+    console.log(submitButton)
+    if (submitButton.contains('form__submit-button'))
+      evt.submitter.textContent = `Круто, спасибо за доверие!`;
+    else {
+      if (submitButton.contains('form__submit-button-mobile'))
+        evt.submitter.textContent = String.fromCodePoint(128155);
+    }
+  }
+});
 
-  cardElement.querySelector('.card__readmore').addEventListener('click', (evt) => {
-    // создаем слушатель на событие нажатия на кнопку "Читать полностью" в карточке
-    console.log('just clicked on the "Read more" link!');
-  });
-  return cardElement;
+buttonDonate.addEventListener('click', (evt) => {
+  // добавляем слушатель на кнопку поддержки
+  alert(`just clicked the DONATE button!`);
+});
+
+function setMultipleEventListeners(elements, name) {
+  // функция добавления слушателей для события клика сразу нескольким DOM элементам
+  const elementsArray = Array.from(elements);
+  elementsArray.forEach(element => element.addEventListener('click', (evt) => {
+    alert(`just clicked the ${name.toUpperCase()}!`);
+  }));
 }
 
-function createCardFeedback(cardData) {
-  // функция создания нового слайда в блоке Feedback
-  const cardTemplate = document.querySelector('#slideFeedback-template').content;
-  const cardElement = cardTemplate.querySelector('.feedback__slide').cloneNode(true);
-  // создаем слайд в блоке Feedback по шаблону
-  cardElement.querySelector('.card__text').textContent = cardData.text;
-  cardElement.querySelector('.card__author').textContent = cardData.author;
+setMultipleEventListeners(cards, 'card');
+// добавляем слушателей кликам на карточки
 
-  return cardElement;
-}
+setMultipleEventListeners(buttonsSubmit, 'submit button');
+// добавляем слушателей кнопкам отправки заявки
 
-function renderCard(slider, card) {
-  // функция добавления слайда в слайдер
-  slider.appendSlide(card);
-}
-
-function loadInitialCardsReviews(cards) {
-  // функция загрузки начальных слайдов из заготовленного массива
-  cards.forEach(element => {
-    const newCard = createCardReviews(element);
-    renderCard(swiperReviews, newCard);
-  });
-};
-
-function loadInitialCardsFeedback(cards) {
-  // функция загрузки начальных слайдов из заготовленного массива
-  cards.forEach(element => {
-    const newCard = createCardFeedback(element);
-    renderCard(swiperFeedback, newCard);
-  });
-};
+setMultipleEventListeners(buttonsSubmitMobile, 'mobile submit button');
+// добавляем слушателей кнопкам отправки заявки в мобильной версии сайта

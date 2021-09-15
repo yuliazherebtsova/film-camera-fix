@@ -1,12 +1,3 @@
-/*
-TODO Чек-лист [V]
-* 1. Изменение текста на кнопке после отправки формы
-*
-* 2. Светлая тема (опционально)
-*
-* 3. Валидаторы
-*/
-
 // сначала переменные , потом блоки, потом элементы, потом модификаторы
 
 // @use "sass:map";
@@ -91,10 +82,11 @@ TODO Чек-лист [V]
 // donate
 
 @import "./modules/blocks/footer/footer.scss";
-@import "./modules/blocks/footer/__form/footer__form.scss";
 @import "./modules/blocks/footer/__copyright/footer__copyright.scss";
 // footer
 
+// Вебинар по SCSS (конспект)
+//
 // .main {
 //   color: $primaryColor;
 //   background-color: $backgroundColor;
