@@ -30,4 +30,5 @@ $className: '.gallery__item';
 @include breakpoint("gallery__lower-row #{$className}:nth-child(2)", $mobile) {
   min-width: 100%;
   min-height: 211px;
+  overflow: hidden;
 }

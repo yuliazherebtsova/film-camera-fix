@@ -388,6 +388,7 @@
   .gallery__lower-row .gallery__item:nth-child(2) {
     min-width: 100%;
     min-height: 211px;
+    overflow: hidden;
   }
 }
 .gallery__image {
