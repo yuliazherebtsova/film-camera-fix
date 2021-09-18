@@ -15,9 +15,10 @@
 
 @include breakpoint('footer__copyright', $desktop) {
   align-self: flex-start;
+  transform: translate(0, -30px);
 }
 
 @include breakpoint('footer__copyright', $mobile) {
-  margin-top: 40px;
-  margin-left: 9px;
+  margin-top: 67px;
+  margin-left: 0;
 }
