@@ -14,4 +14,7 @@
   background: $badgeBackgroundColor;
   color: $badgePrimaryColor;
   border-radius: 4px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }

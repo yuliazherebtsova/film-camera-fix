@@ -1,14 +1,12 @@
 .page__section_place_header {
-  padding-top: 60px;
   padding-bottom: 120px;
-  max-width: 1120px;
 }
 
 @include breakpoint('page__section_place_header', $desktop) {
   padding-bottom: 50px;
 }
 
-@include breakpoint('page__section_place_header', $tablet) {
+@include breakpoint('page__section_place_header', $mobile) {
   padding-top: 24px;
-  padding-bottom: 40px;
+  padding-bottom: 38px;
 }

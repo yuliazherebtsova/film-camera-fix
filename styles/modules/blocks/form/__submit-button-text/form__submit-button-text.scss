@@ -1,0 +1,18 @@
+.form__submit-button-text {
+  margin: 0;
+  padding: 0;
+  font-family: $fontFamily;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  letter-spacing: 0.375px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@include breakpoint("form__submit-button-text", $tablet) {
+  display: none;
+}
