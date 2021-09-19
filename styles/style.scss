@@ -87,6 +87,14 @@
 @import "./modules/blocks/footer/__copyright/footer__copyright.scss";
 // footer
 
+@import "./modules/blocks/toggle/toggle.scss";
+@import "./modules/blocks/toggle/__checkbox/toggle__checkbox.scss";
+@import "./modules/blocks/toggle/__rail/toggle__rail.scss";
+@import "./modules/blocks/toggle/__rail-item/toggle__rail-item.scss";
+@import "./modules/blocks/toggle/__dark-icon/toggle____dark-icon.scss";
+@import "./modules/blocks/toggle/__light-icon/toggle__light-icon.scss";
+// toggle
+
 // Вебинар по SCSS (конспект)
 //
 // .main {

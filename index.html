@@ -17,12 +17,22 @@
     <div class="company">
       <p class="company__name">C-Works</p>
       <div class="company__badge">Мы открылись</div>
+      <div class="toggle">
+        <div class="toggle__light-icon"></div>
+        <input class="toggle__checkbox" type="checkbox" name="toggleTheme">
+        <div class="toggle__rail">
+          <!-- можно toggle__rail и toggle__rail-item сделать псевдоэлементами-->
+          <div class="toggle__rail-item"></div>
+        </div>
+        <div class="toggle__dark-icon"></div>
+      </div>
     </div>
     <h1 class="header__title">Ремонт</h1>
     <p class="header__subtitle">Плёночных фотоаппаратов</p>
     <form class="form" id="headerFormApply" name="formApply">
       <input type="text" class="form__field" id="headerEmail" name="email">
-      <button class="form__submit-button" type="submit"><span class="form__submit-button-text">Отремонтируйте камеру </span>&#9996;</button>
+      <button class="form__submit-button" type="submit"><span class="form__submit-button-text">Отремонтируйте камеру
+        </span>&#9996;</button>
       <p class="form__field-placeholder">Напишите нам и мы свяжемся с вами.</p>
     </form>
   </header>
@@ -106,7 +116,8 @@
     </div>
     <form class="form form_place_footer" id="footerFormApply" name="formApply">
       <input type="text" class="form__field" id="footerEmail" name="email">
-      <button class="form__submit-button" type="submit"><span class="form__submit-button-text">Отремонтируйте камеру </span>&#9996;</button>
+      <button class="form__submit-button" type="submit"><span class="form__submit-button-text">Отремонтируйте камеру
+        </span>&#9996;</button>
       <p class="form__field-placeholder form__fied-paceholder_place_footer">Напишите нам и мы свяжемся с вами.</p>
     </form>
     <p class="footer__copyright">&copy; 2021, Yulia Zherebtsova</p>

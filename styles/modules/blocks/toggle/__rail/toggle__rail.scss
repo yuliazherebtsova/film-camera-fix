@@ -1,0 +1,10 @@
+.toggle__rail {
+  position: relative;
+  width: 45px;
+  min-height: 26px;
+  box-sizing: border-box;
+  border: 1px solid #8E8E98;
+  border-radius: 9999px;
+  background: $toggleDarkThemeBackground;
+  transition: all 0.6s;
+}

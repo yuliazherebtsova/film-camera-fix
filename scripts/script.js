@@ -14,7 +14,6 @@ formApplyHeader.addEventListener('submit', (evt) => {
   // отменяет стандартную отправку формы, которая перезагружает страницу,
   // теперь можем определить свою логику отправки
   if (formApplyHeaderEmail.value) {
-    alert(`the apply form in HEADER has been submitted: ${formApplyHeaderEmail.value}!`);
     if (intFrameWidth >= tabletWidth)
       evt.submitter.textContent = `Круто, спасибо за доверие!`;
     else {
@@ -27,7 +26,6 @@ formApplyFooter.addEventListener('submit', (evt) => {
   // добавляем слушатель на отправку формы в footer
   evt.preventDefault();
   if (formApplyFooterEmail.value) {
-    alert(`the apply form in FOOTER has been submitted: ${formApplyFooterEmail.value}!`);
     if (intFrameWidth >= tabletWidth)
       evt.submitter.textContent = `Круто, спасибо за доверие!`;
     else {
@@ -36,21 +34,21 @@ formApplyFooter.addEventListener('submit', (evt) => {
   }
 });
 
-buttonDonate.addEventListener('click', (evt) => {
-  // добавляем слушатель на кнопку поддержки
-  alert(`just clicked the DONATE button!`);
-});
+// buttonDonate.addEventListener('click', (evt) => {
+//   // добавляем слушатель на кнопку поддержки
+//   alert(`just clicked the DONATE button!`);
+// });
 
-function setMultipleEventListeners(elements, name) {
-  // функция добавления слушателей для события клика сразу нескольким DOM элементам
-  const elementsArray = Array.from(elements);
-  elementsArray.forEach(element => element.addEventListener('click', (evt) => {
-    alert(`just clicked the ${name.toUpperCase()}!`);
-  }));
-}
+// function setMultipleEventListeners(elements, name) {
+//   // функция добавления слушателей для события клика сразу нескольким DOM элементам
+//   const elementsArray = Array.from(elements);
+//   elementsArray.forEach(element => element.addEventListener('click', (evt) => {
+//     alert(`just clicked the ${name.toUpperCase()}!`);
+//   }));
+// }
 
-setMultipleEventListeners(cards, 'card');
+// setMultipleEventListeners(cards, 'card');
 // добавляем слушателей кликам на карточки
 
-setMultipleEventListeners(buttonsSubmit, 'submit button');
+// setMultipleEventListeners(buttonsSubmit, 'submit button');
 // добавляем слушателей кнопкам отправки заявки
