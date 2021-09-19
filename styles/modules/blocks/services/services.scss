@@ -2,10 +2,6 @@
   padding-bottom: 110px;
 }
 
-@include breakpoint('services', $desktop) {
-  padding-bottom: 115px;
-}
-
-@include breakpoint('services', $mobile) {
+@include breakpoint("services", $mobile) {
   padding-bottom: 70px;
 }

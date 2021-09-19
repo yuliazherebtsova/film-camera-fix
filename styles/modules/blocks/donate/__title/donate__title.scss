@@ -2,10 +2,6 @@
   margin-bottom: 90px;
 }
 
-@include breakpoint('donate__title', $desktop) {
-  margin-bottom: 85px;
-}
-
 @include breakpoint("donate__title", $mobile) {
   margin-bottom: 50px;
 }

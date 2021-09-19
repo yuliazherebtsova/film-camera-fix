@@ -3,10 +3,5 @@
 }
 
 @include breakpoint('donate', $desktop) {
-  padding-bottom: 208px;
-}
-
-
-@include breakpoint('donate', $mobile) {
-  padding-bottom: 180px;
+  padding-bottom: 190px;
 }

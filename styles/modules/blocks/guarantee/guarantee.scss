@@ -3,9 +3,9 @@
 }
 
 @include breakpoint('guarantee', $desktop) {
-  padding-bottom: 113px;
+  padding-bottom: 100px;
 }
 
 @include breakpoint('guarantee', $mobile) {
-  padding-bottom: 76px;
+  padding-bottom: 70px;
 }

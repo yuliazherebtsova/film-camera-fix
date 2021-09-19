@@ -1,4 +1,5 @@
-.form__submit-button {
+.form__submit-button-mobile {
+  display: none;
   margin: 0;
   padding: 13px 16px;
   min-width: 221px;
@@ -14,6 +15,9 @@
   color: $primaryColor;
   border: 0;
   border-radius: 0px 8px 8px 0px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 
   &:hover {
     cursor: pointer;
@@ -22,6 +26,8 @@
   }
 }
 
-@include breakpoint('form__submit-button', $mobile) {
-  display: none;
+@include breakpoint('form__submit-button-mobile', $mobile) {
+  display: block;
+  min-width: 50px;
+  min-height: 50px;
 }
