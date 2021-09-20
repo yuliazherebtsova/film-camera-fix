@@ -761,7 +761,7 @@
 .toggle {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 50px;
   max-width: 45px;
 }
 
@@ -779,7 +779,7 @@
   background: #fff;
 }
 .toggle__checkbox:checked + .toggle__rail > .toggle__rail-item {
-  left: calc(100% - 20px);
+  left: calc(100% - 23px);
   right: 0;
 }
 
@@ -804,4 +804,24 @@
   border-radius: 9999px;
   background: #24B47E;
   transform: all 0.6s;
+}
+
+.toggle__dark-icon {
+  position: absolute;
+  top: 0;
+  right: 67px;
+  width: 26px;
+  height: 26px;
+  background-image: url(../../../../../images/toggle-dark-theme.svg);
+  background-size: cover;
+}
+
+.toggle__light-icon {
+  position: absolute;
+  top: 0;
+  left: 67px;
+  width: 26px;
+  height: 26px;
+  background-image: url(../../../../../images/toggle-light-theme.svg);
+  background-size: cover;
 }/*# sourceMappingURL=style.css.map */
