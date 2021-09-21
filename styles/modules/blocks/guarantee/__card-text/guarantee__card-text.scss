@@ -1,0 +1,10 @@
+.guarantee__card-text {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.27;
+}
+
+@include breakpoint("guarantee__card-text", $mobile) {
+  font-size: 12px;
+  line-height: 1.5;
+}

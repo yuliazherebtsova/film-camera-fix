@@ -1,0 +1,11 @@
+.gallery__lower-row {
+  display: grid;
+  max-height: 552px;
+  grid-template-columns: auto 1fr;
+  column-gap: 20px;
+}
+
+@include breakpoint('gallery__lower-row', $mobile) {
+  display: flex;
+  flex-direction: column;
+}

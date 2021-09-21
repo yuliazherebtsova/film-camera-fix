@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="Yulia Zherebtsova">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="icon" href="./images/favicon.svg">
+  <title>Ремонт плёночных фотоаппаратов</title>
+</head>
+
+<body class="page">
+  <header class="header page__section page__section_place_header">
+    <div class="company">
+      <p class="company__name">C-Works</p>
+      <div class="company__badge">Мы открылись</div>
+    </div>
+    <h1 class="header__title">Ремонт</h1>
+    <p class="header__subtitle">Плёночных фотоаппаратов</p>
+    <form class="form" id="headerFormApply" name="formApply">
+      <input type="text" class="form__field" id="headerEmail" name="email">
+      <button class="form__submit-button" type="submit">Отремонтируйте камеру &#9996;</button>
+      <button class="form__submit-button-mobile" type="submit">&#9996;</button>
+      <p class="form__field-placeholder">Напишите нам и мы свяжемся с вами.</p>
+    </form>
+  </header>
+  <main class="content">
+    <section class="gallery content__section content__section_place_gallery" aria-label="Блок с иллюстрациями">
+      <div class="gallery__upper-row">
+        <figure class="gallery__item"><img class="gallery__image" src="./images/gallery-img-m2.png"
+            alt="Элемент фотокамеры"></figure>
+        <figure class="gallery__item"><img class="gallery__image" src="./images/gallery-img-yellow.png"
+            alt="Желтый прямоугольник">
+        </figure>
+      </div>
+      <div class="gallery__lower-row">
+        <figure class="gallery__item"><img class="gallery__image" src="./images/gallery-img-aqua.png"
+            alt="Зеленый прямоугольник">
+        </figure>
+        <figure class="gallery__item"><img class="gallery__image" src="./images/gallery-img-camera.png"
+            alt="Фотокамера">
+        </figure>
+      </div>
+    </section>
+    <section class="description content__section" aria-label="Блок с описанием">
+      <p class="description__text">
+        Мы&nbsp;ремонтируем плёночные фотоаппараты. Полностью механические камеры, относительно современные камеры на
+        электронике, проводим CLA камер, принимаем в&nbsp;зачёт оплаты сломаные тушки и&nbsp;объективы.
+      </p>
+    </section>
+    <section class="services content__section" aria-label="Блок со спиcком услуг">
+      <h2 class="services__title section-title">Для энтузиастов, от энтузиастов &#128072;</h2>
+      <ul class="cards">
+        <li class="card">
+          <span class="card__tag">CLA</span>
+          <h3 class="card__title">Чистка камер.</h3>
+          <p class="card__text">Замена уплотнителей, дампфера зеркала, смазка механизмов, юстировка.</p>
+          <span class="card__price">от 2000 &#x20bd;</span>
+        </li>
+        <li class="card">
+          <span class="card__tag">Ремонт</span>
+          <h3 class="card__title">Ремонт камер.</h3>
+          <p class="card__text">Ремонт механизмов, замена деталей, пайка электроники, адаптация питания.</p>
+          <span class="card__price">от 2500 &#x20bd;</span>
+        </li>
+      </ul>
+    </section>
+    <section class="guarantee content__section" aria-label="Блок со списком гарантий на услуги">
+      <h2 class="guarantee__title section-title">Полная гарантия &#9889;</h2>
+      <ul class="guarantee__cards-list cards">
+        <li class="guarantee__card card">
+          <h3 class="guarantee__card-title card__title">CLA</h3>
+          <p class="guarantee__card-text card__text">После CLA мы даем гарантию на 1 год, в случае беды мы заново
+            обслужим вашу камеру</p>
+        </li>
+        <li class="guarantee__card card">
+          <h3 class="guarantee__card-title card__title">Ремонт</h3>
+          <p class="guarantee__card-text card__text">После ремонта мы даем гарантию на 3 месяца или 6 месяцев.</p>
+        </li>
+        <li class="guarantee__card card">
+          <h3 class="guarantee__card-title card__title">Чистка и адаптация</h3>
+          <p class="guarantee__card-text card__text">После пайки и адаптации питания мы даем гарантию
+            на 1 год.</p>
+        </li>
+        <li class="guarantee__card card">
+          <h3 class="guarantee__card-title card__title">Осмотр</h3>
+          <p class="guarantee__card-text guarantee__title card__text">Осмотр камеры — бесплатен, если мы что-то сломаем,
+            поменяем деталь сами.
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section class="donate content__section" aria-label="Блок с возможностью поддержать сервис">
+      <h2 class="donate__title section-title">Поддержите нас &#129309;</h2>
+      <button class="donate__button" type="button">Напишите нам если хотите помочь!</button>
+      <p class="donate__text">Ещё вы&nbsp;сможете безвозмездно поддержать нас на&nbsp;Patreon, пока мы&nbsp;ещё создали
+        аккаунт, но&nbsp;как только это сделаем, сообщим вам.</p>
+    </section>
+  </main>
+  <footer class="footer page__section page__section_place_footer">
+    <div class="company">
+      <p class="company__name">C-Works</p>
+      <div class="company__badge">Мы открылись</div>
+    </div>
+    <form class="form form_place_footer" id="footerFormApply" name="formApply">
+      <input type="text" class="form__field" id="footerEmail" name="email">
+      <button class="form__submit-button" type="submit">Отремонтируйте камеру &#9996;</button>
+      <button class="form__submit-button-mobile" type="submit">&#9996;</button>
+      <p class="form__field-placeholder">Напишите нам и мы свяжемся с вами.</p>
+    </form>
+    <p class="footer__copyright">&copy; 2021, Yulia Zherebtsova</p>
+  </footer>
+  <script src="./scripts/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+.form_place_footer {
+  grid-row: 2;
+}
+
+@include breakpoint("form_place_footer", $mobile) {
+  margin-top: 170px;
+}

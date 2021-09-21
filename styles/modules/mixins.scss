@@ -1,0 +1,7 @@
+@mixin breakpoint($className, $screenSize) {
+  @media (max-width: $screenSize) {
+    .#{$className} {
+      @content;
+    }
+  }
+}

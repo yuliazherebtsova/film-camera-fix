@@ -1,0 +1,12 @@
+.cards {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($cardWidth, 1fr));
+  gap: 20px;
+  list-style: none;
+}
+
+@include breakpoint("cards", $mobile) {
+  grid-template-columns: repeat(auto-fit, minmax($cardWidthMobile, 1fr));
+}

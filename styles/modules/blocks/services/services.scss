@@ -1,0 +1,7 @@
+.services {
+  padding-bottom: 110px;
+}
+
+@include breakpoint("services", $mobile) {
+  padding-bottom: 70px;
+}

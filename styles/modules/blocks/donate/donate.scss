@@ -1,0 +1,7 @@
+.donate {
+  padding-bottom: 240px;
+}
+
+@include breakpoint('donate', $desktop) {
+  padding-bottom: 190px;
+}

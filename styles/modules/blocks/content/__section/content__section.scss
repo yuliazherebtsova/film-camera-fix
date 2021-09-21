@@ -1,0 +1,15 @@
+.content__section {
+  max-width: 1120px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@include breakpoint('content__section', $desktop) {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+@include breakpoint('content__section', $mobile) {
+  padding-left: 20px;
+  padding-right: 20px;
+}

@@ -1,0 +1,11 @@
+.gallery__upper-row {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 448px 1fr;
+  column-gap: 20px;
+}
+
+@include breakpoint('gallery__upper-row', $mobile) {
+  display: flex;
+  flex-direction: column;
+}

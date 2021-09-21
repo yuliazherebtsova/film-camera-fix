@@ -1,0 +1,9 @@
+.description {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+@include breakpoint('description', $mobile) {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}

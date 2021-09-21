@@ -1,0 +1,7 @@
+.services__title {
+  margin-bottom: 120px;
+}
+
+@include breakpoint("section-title", $mobile) {
+  margin-bottom: 70px;
+}
