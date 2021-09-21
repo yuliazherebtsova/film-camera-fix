@@ -846,7 +846,7 @@
   right: 67px;
   width: 24px;
   height: 24px;
-  background-image: url(./images/toggle-dark-theme.svg);
+  background-image: url(../images/toggle-dark-theme.svg);
   background-size: cover;
 }
 
@@ -856,6 +856,6 @@
   left: 67px;
   width: 26px;
   height: 26px;
-  background-image: url(./images/toggle-light-theme.svg);
+  background-image: url(../images/toggle-light-theme.svg);
   background-size: cover;
 }/*# sourceMappingURL=style.css.map */
