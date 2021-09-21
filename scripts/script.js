@@ -12,7 +12,7 @@ const page = document.querySelector('.page');
 const cardTitles = document.querySelectorAll('.card__title');
 const headerTitle = document.querySelector('.header__title');
 const headerSubtitle = document.querySelector('.header__subtitle');
-const companyName = document.querySelector('.company__name');
+const companyNames = document.querySelectorAll('.company__name');
 const sectionTitles = document.querySelectorAll('.section-title');
 const galleryUpperPic = document.querySelector('.gallery__upper-row .gallery__item:nth-child(1) .gallery__image');
 const galleryLowerPic = document.querySelector('.gallery__lower-row .gallery__item:nth-child(2) .gallery__image');
@@ -52,7 +52,7 @@ toggle.addEventListener('change', (evt) => {
   headerSubtitle.classList.toggle('header__subtitle_theme_light');
   sectionTitles.forEach(el => el.classList.toggle('section-title_theme_light'));
   console.log(companyName)
-  companyName.classList.toggle('company__name_theme_light');
+  companyNames.forEach(el => el.classList.toggle('company__name_theme_light'));
   if (evt.target.checked) {
     galleryUpperPic.setAttribute('src', './images/gallery-img-m2-light-theme.png');
     galleryLowerPic.setAttribute('src', './images/gallery-img-camera-light-theme.png');
