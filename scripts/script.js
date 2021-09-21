@@ -51,7 +51,6 @@ toggle.addEventListener('change', (evt) => {
   headerTitle.classList.toggle('header__title_theme_light');
   headerSubtitle.classList.toggle('header__subtitle_theme_light');
   sectionTitles.forEach(el => el.classList.toggle('section-title_theme_light'));
-  console.log(companyName)
   companyNames.forEach(el => el.classList.toggle('company__name_theme_light'));
   if (evt.target.checked) {
     galleryUpperPic.setAttribute('src', './images/gallery-img-m2-light-theme.png');
