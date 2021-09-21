@@ -9,6 +9,11 @@
   -webkit-font-smoothing: antialiased;
 }
 
+.page_theme_light {
+  background-color: #fff;
+  color: #000;
+}
+
 .page__section {
   max-width: 1120px;
   margin: 0 auto;
@@ -59,15 +64,6 @@
     padding: 30px 0;
   }
 }
-.content {
-  margin: 0 auto;
-  min-width: 320px;
-  background-color: #000;
-  color: #fff;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-}
-
 .content__section {
   max-width: 1120px;
   margin: 0 auto;
@@ -112,6 +108,10 @@
     font-size: 12px;
   }
 }
+.section-title_theme_light {
+  color: #47474c;
+}
+
 .header__title {
   margin: 52px 0 12px;
   padding: 0;
@@ -137,6 +137,10 @@
     line-height: 1.2;
   }
 }
+.header__title_theme_light {
+  color: #000;
+}
+
 .header__subtitle {
   padding: 0;
   margin: 0 0 230px;
@@ -163,6 +167,10 @@
     line-height: 1.27;
   }
 }
+.header__subtitle_theme_light {
+  color: #000;
+}
+
 .company {
   position: relative;
   display: flex;
@@ -199,6 +207,10 @@
     line-height: 1.4;
   }
 }
+.company__badge_theme_light {
+  color: #000;
+}
+
 .company__badge {
   margin: 0;
   padding: 0;
@@ -303,6 +315,7 @@
   text-align: center;
   letter-spacing: 0.375px;
   background: #47474c;
+  transition: background 0.7s ease;
   color: #fff;
   border: 0;
   border-radius: 0px 8px 8px 0px;
@@ -313,10 +326,10 @@
 .form__submit-button:hover {
   cursor: pointer;
   background: #8e8e98;
-  transition: background-color 0.2s linear;
+  transition: background 0.7s ease;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 767px) {
   .form__submit-button {
     width: 52px;
     height: 50px;
@@ -337,7 +350,7 @@
   overflow: hidden;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 767px) {
   .form__submit-button-text {
     display: none;
   }
@@ -452,13 +465,14 @@
   min-width: 550px;
   min-height: 282px;
   background: #1c1c1e;
+  transition: background 0.7s ease;
   border-radius: 16px;
   box-sizing: border-box;
 }
 .card:hover {
   cursor: pointer;
-  background: #232327;
-  transition: background-color 0.2s linear;
+  background: #252528;
+  transition: background 0.7s ease;
 }
 
 @media (max-width: 767px) {
@@ -467,6 +481,14 @@
     min-width: 280px;
   }
 }
+.card_theme_light {
+  background: #FFF4CD;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+.card_theme_light:hover {
+  background: #FEDD68;
+}
+
 .card__tag {
   padding: 0;
   margin: 0 0 20px 0;
@@ -503,6 +525,10 @@
     line-height: 1.33;
   }
 }
+.card__title_theme_light {
+  color: #47474c;
+}
+
 .card__text {
   padding: 0;
   margin: 0 0 40px 0;
@@ -527,7 +553,7 @@
   color: #25e197;
   font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 600;
   font-size: 14px;
 }
 
@@ -666,6 +692,7 @@
   text-align: center;
   letter-spacing: 0.375px;
   background: #47474c;
+  transition: background 0.7s ease;
   color: #fff;
   border: 0;
   border-radius: 8px;
@@ -676,7 +703,7 @@
 .donate__button:hover {
   cursor: pointer;
   background: #8e8e98;
-  transition: background-color 0.2s linear;
+  transition: background 0.7s ease;
 }
 
 @media (max-width: 1240px) {
@@ -765,6 +792,13 @@
   max-width: 45px;
 }
 
+@media (max-width: 425px) {
+  .toggle {
+    top: 40px;
+    left: 50px;
+    right: 0;
+  }
+}
 .toggle__checkbox {
   opacity: 0;
   position: absolute;
@@ -790,7 +824,7 @@
   box-sizing: border-box;
   border: 1px solid #8E8E98;
   border-radius: 9999px;
-  background: #545454;
+  background: #676767;
   transition: all 0.6s;
 }
 
@@ -802,16 +836,16 @@
   min-height: 22px;
   box-shadow: 0px 0px 0px #ffffff;
   border-radius: 9999px;
-  background: #24B47E;
-  transform: all 0.6s;
+  background: #24b47e;
+  transition: all 0.3s;
 }
 
 .toggle__dark-icon {
   position: absolute;
   top: 0;
   right: 67px;
-  width: 26px;
-  height: 26px;
+  width: 24px;
+  height: 24px;
   background-image: url(../../../../../images/toggle-dark-theme.svg);
   background-size: cover;
 }

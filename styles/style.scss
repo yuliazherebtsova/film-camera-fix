@@ -13,26 +13,30 @@
 // переменные, миксины, функции
 
 @import "./modules/blocks/page/page.scss";
+@import "./modules/blocks/page/_theme/page_theme_light.scss";
 @import "./modules/blocks/page/__section/page__section.scss";
 @import "./modules/blocks/page/__section/_place/page__section_place_header.scss";
 @import "./modules/blocks/page/__section/_place/page__section_place_footer.scss";
 // page
 
-@import "./modules/blocks/content/content.scss";
 @import "./modules/blocks/content/__section/content__section.scss";
 @import "./modules/blocks/content/__section/_place/content__section_place_gallery.scss";
 // content
 
 @import "./modules/blocks/section-title/section-title.scss";
+@import "./modules/blocks/section-title/_theme/section-title_theme_light.scss";
 // section-title
 
 @import "./modules/blocks/header/__title/header__title.scss";
+@import "./modules/blocks/header/__title/_theme/header__title_theme_light.scss";
 @import "./modules/blocks/header/__subtitle/header__subtitle.scss";
+@import "./modules/blocks/header/__subtitle/_theme/header__subtitle_theme_light.scss";
 // header
 
 @import "./modules/blocks/company/company.scss";
 @import "./modules/blocks/company/_place/company_place_footer.scss";
 @import "./modules/blocks/company/__name/company__name.scss";
+@import "./modules/blocks/company/__name/_theme/company__badge_theme_light.scss";
 @import "./modules/blocks/company/__badge/company__badge.scss";
 // company
 
@@ -56,8 +60,10 @@
 // description
 
 @import "./modules/blocks/card/card.scss";
+@import "./modules/blocks/card/_theme/card_theme_light.scss";
 @import "./modules/blocks/card/__tag/card__tag.scss";
 @import "./modules/blocks/card/__title/card__title.scss";
+@import "./modules/blocks/card/__title/_theme/card__title_theme_light.scss";
 @import "./modules/blocks/card/__text/card__text.scss";
 @import "./modules/blocks/card/__price/card__price.scss";
 // card
