@@ -1,5 +1,5 @@
 const intFrameWidth = window.innerWidth;
-const tabletWidth = 1024;
+const tabletWidth = 768;
 const formApplyHeader = document.querySelector('#headerFormApply');
 const formApplyHeaderEmail = document.querySelector('#headerFormApply').elements['email'];
 const formApplyFooter = document.querySelector('#footerFormApply');
