@@ -1,0 +1,8 @@
+.company_place_footer {
+  margin-left: -5px;
+  margin-top: 2px;
+}
+
+@include breakpoint('company_place_footer', $mobile) {
+  margin-bottom: 9px;
+}
