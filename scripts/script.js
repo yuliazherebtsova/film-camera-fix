@@ -7,6 +7,15 @@ const formApplyFooterEmail = document.querySelector('#footerFormApply').elements
 const cards = document.querySelectorAll('.card');
 const buttonsSubmit = document.querySelectorAll('.form__submit-button');
 const buttonDonate = document.querySelector('.donate__button');
+const toggle = document.querySelector('.toggle');
+const page = document.querySelector('.page');
+const cardTitles = document.querySelectorAll('.card__title');
+const headerTitle = document.querySelector('.header__title');
+const headerSubtitle = document.querySelector('.header__subtitle');
+const companyName = document.querySelector('.company__name');
+const sectionTitles = document.querySelectorAll('.section-title');
+const galleryUpperPic = document.querySelector('.gallery__upper-row .gallery__item:nth-child(1) .gallery__image');
+const galleryLowerPic = document.querySelector('.gallery__lower-row .gallery__item:nth-child(2) .gallery__image');
 
 formApplyHeader.addEventListener('submit', (evt) => {
   // добавляем слушатель на отправку формы в header
@@ -34,47 +43,22 @@ formApplyFooter.addEventListener('submit', (evt) => {
   }
 });
 
-// Select the button
-const toggle = document.querySelector(".toggle__checkbox");
-/*
-// Check for dark mode preference at the OS level
-const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-// Get the user's theme preference from local storage, if it's available
-const currentTheme = localStorage.getItem("theme");
-// If the user's preference in localStorage is dark...
-if (currentTheme == "dark") {
-  // ...let's toggle the .dark-theme class on the body
-  document.body.classList.toggle("dark-mode");
-// Otherwise, if the user's preference in localStorage is light...
-} else if (currentTheme == "light") {
-  // ...let's toggle the .light-theme class on the body
-  document.body.classList.toggle("light-mode");
-}*/
-
-// Listen for a click on the button
 toggle.addEventListener('change', (evt) => {
+  // Добавляем слушатель на чек-бокс смены цветовой темы
+  page.classList.toggle('page_theme_light');
+  cards.forEach(el => el.classList.toggle('card_theme_light'));
+  cardTitles.forEach(el => el.classList.toggle('card__title_theme_light'));
+  headerTitle.classList.toggle('header__title_theme_light');
+  headerSubtitle.classList.toggle('header__subtitle_theme_light');
+  sectionTitles.forEach(el => el.classList.toggle('section-title_theme_light'));
+  console.log(companyName)
+  companyName.classList.toggle('company__name_theme_light');
   if (evt.target.checked) {
-    console.log("Checkbox is checked..");
-  } else {
-    console.log("Checkbox is not checked..");
+    galleryUpperPic.setAttribute('src', './images/gallery-img-m2-light-theme.png');
+    galleryLowerPic.setAttribute('src', './images/gallery-img-camera-light-theme.png');
+  }
+  else {
+    galleryUpperPic.setAttribute('src', './images/gallery-img-m2.png');
+    galleryLowerPic.setAttribute('src', './images/gallery-img-camera.png');
   }
 });
-
-// buttonDonate.addEventListener('click', (evt) => {
-//   // добавляем слушатель на кнопку поддержки
-//   alert(`just clicked the DONATE button!`);
-// });
-
-// function setMultipleEventListeners(elements, name) {
-//   // функция добавления слушателей для события клика сразу нескольким DOM элементам
-//   const elementsArray = Array.from(elements);
-//   elementsArray.forEach(element => element.addEventListener('click', (evt) => {
-//     alert(`just clicked the ${name.toUpperCase()}!`);
-//   }));
-// }
-
-// setMultipleEventListeners(cards, 'card');
-// добавляем слушателей кликам на карточки
-
-// setMultipleEventListeners(buttonsSubmit, 'submit button');
-// добавляем слушателей кнопкам отправки заявки
