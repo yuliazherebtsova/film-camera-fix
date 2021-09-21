@@ -26,6 +26,10 @@
   }
 }
 
+@include breakpoint('donate__button', $desktop) {
+  margin-bottom: 40px;
+}
+
 @include breakpoint('donate__button', $mobile) {
   margin-bottom: 30px;
   font-size: 12px;

@@ -3,8 +3,8 @@
 // @use "sass:map";
 // // sass "словарь"
 
-@import "/vendor/normalize.css";
-@import "/vendor/fonts/fonts.css";
+@import "../vendor/normalize.css";
+@import "../vendor/fonts/fonts.css";
 // vendor
 
 @import "./modules/variables.scss";
@@ -31,6 +31,7 @@
 // header
 
 @import "./modules/blocks/company/company.scss";
+@import "./modules/blocks/company/_place/company_place_footer.scss";
 @import "./modules/blocks/company/__name/company__name.scss";
 @import "./modules/blocks/company/__badge/company__badge.scss";
 // company
@@ -39,8 +40,9 @@
 @import "./modules/blocks/form/_place/form_place_footer/form_place_footer.scss";
 @import "./modules/blocks/form/__field/form__field.scss";
 @import "./modules/blocks/form/__field-placeholder/form__field-placeholder.scss";
+@import "./modules/blocks/form/__field-placeholder/_place/form__fied-paceholder_place_footer.scss";
 @import "./modules/blocks/form/__submit-button/_submit-button";
-@import "./modules/blocks/form/__submit-button-mobile/form__submit-button-mobile.scss";
+@import "./modules/blocks/form/__submit-button-text/form__submit-button-text.scss";
 // form
 
 @import "./modules/blocks/gallery/__upper-row/gallery__upper-row.scss";
