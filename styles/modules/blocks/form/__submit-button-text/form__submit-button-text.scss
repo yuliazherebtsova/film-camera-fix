@@ -13,6 +13,6 @@
   overflow: hidden;
 }
 
-@include breakpoint("form__submit-button-text", $tablet) {
+@include breakpoint("form__submit-button-text", $mobile) {
   display: none;
 }

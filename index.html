@@ -7,6 +7,7 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="author" content="Yulia Zherebtsova">
+  <meta name="color-scheme" content="dark light">
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="icon" href="./images/favicon.svg">
   <title>Ремонт плёночных фотоаппаратов</title>
@@ -17,12 +18,22 @@
     <div class="company">
       <p class="company__name">C-Works</p>
       <div class="company__badge">Мы открылись</div>
+      <div class="toggle">
+        <div class="toggle__light-icon"></div>
+        <input class="toggle__checkbox" type="checkbox" name="toggleColorTheme">
+        <div class="toggle__rail">
+          <!-- можно toggle__rail и toggle__rail-item сделать псевдоэлементами-->
+          <div class="toggle__rail-item"></div>
+        </div>
+        <div class="toggle__dark-icon"></div>
+      </div>
     </div>
     <h1 class="header__title">Ремонт</h1>
     <p class="header__subtitle">Плёночных фотоаппаратов</p>
     <form class="form" id="headerFormApply" name="formApply">
       <input type="text" class="form__field" id="headerEmail" name="email">
-      <button class="form__submit-button" type="submit"><span class="form__submit-button-text">Отремонтируйте камеру </span>&#9996;</button>
+      <button class="form__submit-button" type="submit"><span class="form__submit-button-text">Отремонтируйте камеру
+        </span>&#9996;</button>
       <p class="form__field-placeholder">Напишите нам и мы свяжемся с вами.</p>
     </form>
   </header>
@@ -51,17 +62,17 @@
       </p>
     </section>
     <section class="services content__section" aria-label="Блок со спиcком услуг">
-      <h2 class="services__title section-title">Для энтузиастов, от энтузиастов &#128072;</h2>
+      <h2 class="services__title section-title section-">Для энтузиастов, от энтузиастов &#128072;</h2>
       <ul class="cards">
         <li class="card">
           <span class="card__tag">CLA</span>
-          <h3 class="card__title">Чистка камер.</h3>
+          <h3 class="card__title ">Чистка камер.</h3>
           <p class="card__text">Замена уплотнителей, дампфера зеркала, смазка механизмов, юстировка.</p>
           <span class="card__price">от 2000 &#x20bd;</span>
         </li>
         <li class="card">
           <span class="card__tag">Ремонт</span>
-          <h3 class="card__title">Ремонт камер.</h3>
+          <h3 class="card__title ">Ремонт камер.</h3>
           <p class="card__text">Ремонт механизмов, замена деталей, пайка электроники, адаптация питания.</p>
           <span class="card__price">от 2500 &#x20bd;</span>
         </li>
@@ -106,7 +117,8 @@
     </div>
     <form class="form form_place_footer" id="footerFormApply" name="formApply">
       <input type="text" class="form__field" id="footerEmail" name="email">
-      <button class="form__submit-button" type="submit"><span class="form__submit-button-text">Отремонтируйте камеру </span>&#9996;</button>
+      <button class="form__submit-button" type="submit"><span class="form__submit-button-text">Отремонтируйте камеру
+        </span>&#9996;</button>
       <p class="form__field-placeholder form__fied-paceholder_place_footer">Напишите нам и мы свяжемся с вами.</p>
     </form>
     <p class="footer__copyright">&copy; 2021, Yulia Zherebtsova</p>

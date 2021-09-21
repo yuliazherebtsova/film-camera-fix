@@ -1,0 +1,11 @@
+.toggle__rail-item {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 22px;
+  min-height: 22px;
+  box-shadow: 0px 0px 0px #ffffff;
+  border-radius: 9999px;
+  background: $toggleItemColor;
+  transition: all .3s;
+}

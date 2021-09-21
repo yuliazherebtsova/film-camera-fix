@@ -12,6 +12,7 @@
   text-align: center;
   letter-spacing: 0.375px;
   background: $buttonBackgroundColor;
+  transition: $buttonHoverTransition;
   color: $primaryColor;
   border: 0;
   border-radius: 8px;
@@ -22,7 +23,7 @@
   &:hover {
     cursor: pointer;
     background: $buttonBackgroundColorHovered;
-    transition: background-color 0.2s linear;
+    transition: $buttonHoverTransition;
   }
 }
 

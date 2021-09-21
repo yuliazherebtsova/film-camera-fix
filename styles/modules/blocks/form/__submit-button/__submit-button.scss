@@ -11,6 +11,7 @@
   text-align: center;
   letter-spacing: 0.375px;
   background: $buttonBackgroundColor;
+  transition: $buttonHoverTransition;
   color: $primaryColor;
   border: 0;
   border-radius: 0px 8px 8px 0px;
@@ -25,7 +26,7 @@
   }
 }
 
-@include breakpoint("form__submit-button", $tablet) {
+@include breakpoint("form__submit-button", $mobile) {
   width: 52px;
   height: 50px;
 }

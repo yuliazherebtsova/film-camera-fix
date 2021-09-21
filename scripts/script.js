@@ -1,5 +1,5 @@
 const intFrameWidth = window.innerWidth;
-const tabletWidth = 1024;
+const tabletWidth = 768;
 const formApplyHeader = document.querySelector('#headerFormApply');
 const formApplyHeaderEmail = document.querySelector('#headerFormApply').elements['email'];
 const formApplyFooter = document.querySelector('#footerFormApply');
@@ -7,6 +7,15 @@ const formApplyFooterEmail = document.querySelector('#footerFormApply').elements
 const cards = document.querySelectorAll('.card');
 const buttonsSubmit = document.querySelectorAll('.form__submit-button');
 const buttonDonate = document.querySelector('.donate__button');
+const toggle = document.querySelector('.toggle');
+const page = document.querySelector('.page');
+const cardTitles = document.querySelectorAll('.card__title');
+const headerTitle = document.querySelector('.header__title');
+const headerSubtitle = document.querySelector('.header__subtitle');
+const companyName = document.querySelector('.company__name');
+const sectionTitles = document.querySelectorAll('.section-title');
+const galleryUpperPic = document.querySelector('.gallery__upper-row .gallery__item:nth-child(1) .gallery__image');
+const galleryLowerPic = document.querySelector('.gallery__lower-row .gallery__item:nth-child(2) .gallery__image');
 
 formApplyHeader.addEventListener('submit', (evt) => {
   // добавляем слушатель на отправку формы в header
@@ -14,7 +23,6 @@ formApplyHeader.addEventListener('submit', (evt) => {
   // отменяет стандартную отправку формы, которая перезагружает страницу,
   // теперь можем определить свою логику отправки
   if (formApplyHeaderEmail.value) {
-    alert(`the apply form in HEADER has been submitted: ${formApplyHeaderEmail.value}!`);
     if (intFrameWidth >= tabletWidth)
       evt.submitter.textContent = `Круто, спасибо за доверие!`;
     else {
@@ -27,7 +35,6 @@ formApplyFooter.addEventListener('submit', (evt) => {
   // добавляем слушатель на отправку формы в footer
   evt.preventDefault();
   if (formApplyFooterEmail.value) {
-    alert(`the apply form in FOOTER has been submitted: ${formApplyFooterEmail.value}!`);
     if (intFrameWidth >= tabletWidth)
       evt.submitter.textContent = `Круто, спасибо за доверие!`;
     else {
@@ -36,21 +43,22 @@ formApplyFooter.addEventListener('submit', (evt) => {
   }
 });
 
-buttonDonate.addEventListener('click', (evt) => {
-  // добавляем слушатель на кнопку поддержки
-  alert(`just clicked the DONATE button!`);
+toggle.addEventListener('change', (evt) => {
+  // Добавляем слушатель на чек-бокс смены цветовой темы
+  page.classList.toggle('page_theme_light');
+  cards.forEach(el => el.classList.toggle('card_theme_light'));
+  cardTitles.forEach(el => el.classList.toggle('card__title_theme_light'));
+  headerTitle.classList.toggle('header__title_theme_light');
+  headerSubtitle.classList.toggle('header__subtitle_theme_light');
+  sectionTitles.forEach(el => el.classList.toggle('section-title_theme_light'));
+  console.log(companyName)
+  companyName.classList.toggle('company__name_theme_light');
+  if (evt.target.checked) {
+    galleryUpperPic.setAttribute('src', './images/gallery-img-m2-light-theme.png');
+    galleryLowerPic.setAttribute('src', './images/gallery-img-camera-light-theme.png');
+  }
+  else {
+    galleryUpperPic.setAttribute('src', './images/gallery-img-m2.png');
+    galleryLowerPic.setAttribute('src', './images/gallery-img-camera.png');
+  }
 });
-
-function setMultipleEventListeners(elements, name) {
-  // функция добавления слушателей для события клика сразу нескольким DOM элементам
-  const elementsArray = Array.from(elements);
-  elementsArray.forEach(element => element.addEventListener('click', (evt) => {
-    alert(`just clicked the ${name.toUpperCase()}!`);
-  }));
-}
-
-setMultipleEventListeners(cards, 'card');
-// добавляем слушателей кликам на карточки
-
-setMultipleEventListeners(buttonsSubmit, 'submit button');
-// добавляем слушателей кнопкам отправки заявки

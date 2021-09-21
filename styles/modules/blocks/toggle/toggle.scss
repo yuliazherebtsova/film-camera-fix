@@ -1,0 +1,12 @@
+.toggle {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  max-width: 45px;
+}
+
+@include breakpoint('toggle', $mobilePortrait) {
+  top: 40px;
+  left: 50px;
+  right: 0;
+}
