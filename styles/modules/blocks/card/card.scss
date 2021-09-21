@@ -5,6 +5,7 @@
   min-width: $cardWidth;
   min-height: 282px;
   background: $cardBackgroundColor;
+  transition: $buttonHoverTransition;
   border-radius: 16px;
   box-sizing: border-box;
 
